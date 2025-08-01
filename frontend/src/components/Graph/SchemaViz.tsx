@@ -211,7 +211,7 @@ const SchemaViz: React.FunctionComponent<SchemaViewModalProps> = ({
           'aria-labelledby': 'form-dialog-title',
         }}
       >
-        <Dialog.Header htmlAttributes={{ id: 'graph-title' }}>{headerTitle}</Dialog.Header>
+        <Dialog.Title htmlAttributes={{ id: 'graph-title' }}>{headerTitle}</Dialog.Title>
         <Dialog.Content className='flex flex-col n-gap-token-4 w-full grow overflow-auto border! border-palette-neutral-border-weak!'>
           <div className='bg-white relative w-full h-full max-h-full border! border-palette-neutral-border-weak!'>
             {loading || schemaLoading ? (

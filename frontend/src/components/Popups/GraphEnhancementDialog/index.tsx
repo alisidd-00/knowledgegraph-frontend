@@ -113,7 +113,7 @@ export default function GraphEnhancementDialog({
       hasDisabledCloseButton={false}
       onClose={handleOnclose}
     >
-      <Dialog.Header className='flex justify-between self-end mb-0! '>
+              <Dialog.Title className='flex justify-between self-end mb-0! '>
         <div className='n-bg-palette-neutral-bg-weak px-4'>
           <div className='flex! flex-row items-center mb-2'>
             <img
@@ -183,7 +183,7 @@ export default function GraphEnhancementDialog({
             </div>
           </div>
         </div>
-      </Dialog.Header>
+              </Dialog.Title>
       <Dialog.Content className='flex flex-col n-gap-token- grow w-[90%] mx-auto'>
         <Tabs.TabPanel className='n-flex n-flex-col n-gap-token-4' value={activeTab} tabId={0}>
           <div className='w-[80%] mx-auto'>

@@ -74,9 +74,9 @@ const SystemPromptEditor: React.FC<SystemPromptEditorProps> = ({ open, onClose }
         id: 'system-prompt-editor-modal',
       }}
     >
-      <Dialog.Header id='system-prompt-editor-dialog' className='flex-shrink-0'>
+      <Dialog.Title id='system-prompt-editor-dialog' className='flex-shrink-0'>
         <Typography variant='h4'>Edit System Prompt</Typography>
-      </Dialog.Header>
+      </Dialog.Title>
 
       <Dialog.Content className='flex flex-col flex-1 min-h-0 p-4'>
         {error && <Banner type='danger' title='Error' description={error} className='mb-4 flex-shrink-0' />}

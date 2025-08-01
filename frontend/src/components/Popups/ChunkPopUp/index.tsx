@@ -34,7 +34,7 @@ const ChunkPopUp = ({
   }, [chunks]);
   return (
     <Dialog isOpen={showChunkPopup} onClose={onClose}>
-      <Dialog.Header>
+              <Dialog.Title>
         <div className='flex! flex-row items-center mb-2'>
           <img
             src={chunklogo}
@@ -55,7 +55,7 @@ const ChunkPopUp = ({
             <Typography variant='subheading-small'>Total Pages: {totalPageCount}</Typography>
           </div>
         )}
-      </Dialog.Header>
+              </Dialog.Title>
       <Dialog.Content>
         {chunksLoading ? (
           <Loader title='loading...'></Loader>

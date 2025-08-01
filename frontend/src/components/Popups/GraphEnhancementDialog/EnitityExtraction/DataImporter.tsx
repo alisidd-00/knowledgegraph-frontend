@@ -98,7 +98,7 @@ const DataImporterSchemaDialog = ({ open, onClose, onApply }: DataImporterDialog
   return (
     <>
       <Dialog isOpen={open} onClose={handleCancel}>
-        <Dialog.Header>JSON Data Graph Extraction Settings</Dialog.Header>
+        <Dialog.Title>JSON Data Graph Extraction Settings</Dialog.Title>
         <Dialog.Content className='n-flex n-flex-col n-gap-token-6 p-6'>
           <ImporterInput />
           <UploadJsonData
