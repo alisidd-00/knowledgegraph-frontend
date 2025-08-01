@@ -18,7 +18,7 @@ const SchemaSelectionDialog = ({
 }: SchemaSelectionProps) => {
   return (
     <Dialog size='medium' isOpen={open} onClose={onClose} htmlAttributes={{ 'aria-labelledby': 'form-dialog-title' }}>
-              <Dialog.Title>{'Schema From Database'}</Dialog.Title>
+              <div className='p-4 border-b border-palette-neutral-border-weak'>{'Schema From Database'}</div>
       <Dialog.Content className='n-flex n-flex-col n-gap-token-4'>
         {loading ? (
           <div className='my-40 flex! items-center justify-center'>

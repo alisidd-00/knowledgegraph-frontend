@@ -344,7 +344,7 @@ export default function ConnectionModal({
           'aria-labelledby': 'form-dialog-title',
         }}
       >
-        <Dialog.Title htmlAttributes={{ id: 'form-dialog-title' }}>Connect to Database</Dialog.Title>
+        <div id='form-dialog-title' className='p-4 border-b border-palette-neutral-border-weak'>Connect to Database</div>
         <Dialog.Content className='n-flex n-flex-col n-gap-token-4'>
           <Typography variant='body-medium' className='mb-4'>
             <TextLink type='external' href='https://console.neo4j.io/'>

@@ -74,9 +74,9 @@ const SystemPromptEditor: React.FC<SystemPromptEditorProps> = ({ open, onClose }
         id: 'system-prompt-editor-modal',
       }}
     >
-      <Dialog.Title id='system-prompt-editor-dialog' className='flex-shrink-0'>
+      <div id='system-prompt-editor-dialog' className='flex-shrink-0 p-4 border-b border-palette-neutral-border-weak'>
         <Typography variant='h4'>Edit System Prompt</Typography>
-      </Dialog.Title>
+      </div>
 
       <Dialog.Content className='flex flex-col flex-1 min-h-0 p-4'>
         {error && <Banner type='danger' title='Error' description={error} className='mb-4 flex-shrink-0' />}
@@ -115,14 +115,14 @@ const SystemPromptEditor: React.FC<SystemPromptEditorProps> = ({ open, onClose }
 
       <Dialog.Actions className='flex-shrink-0 p-4 border-t border-palette-neutral-border-weak'>
         <div className='flex gap-3 justify-end w-full'>
-          <Button variant='tertiary' onClick={handleCancel} disabled={isSaving} size='medium'>
+          <Button fill='text' onClick={handleCancel} isDisabled={isSaving} size='medium'>
             Cancel
           </Button>
           <Button
-            variant='primary'
+            fill='filled'
             onClick={handleSave}
-            disabled={isLoading || isSaving}
-            loading={isSaving}
+            isDisabled={isLoading || isSaving}
+            isLoading={isSaving}
             size='medium'
           >
             Save

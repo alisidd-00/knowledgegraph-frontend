@@ -38,7 +38,7 @@ export default function GenericModal({
         closeHandler();
       }}
     >
-              <Dialog.Title>
+              <div className='p-4 border-b border-palette-neutral-border-weak'>
         <div className='flex! flex-row pb-6 items-center mb-2'>
           <img
             src={Neo4jDataImportFromCloud}
@@ -115,7 +115,7 @@ export default function GenericModal({
             <WebInput loading={isLoading} setIsLoading={setIsLoading} />
           </Tabs.TabPanel>
         )}
-              </Dialog.Title>
+              </div>
     </Dialog>
   );
 }
