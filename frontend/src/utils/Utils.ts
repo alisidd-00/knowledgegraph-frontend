@@ -26,12 +26,24 @@ import gcslogo from '../assets/images/gcs.webp';
 import { chatModeLables, EXPIRATION_DAYS } from './Constants';
 
 // Get the Url
+// export const url = () => {
+//   let url = window.location.href.replace('5173', '8000');
+//   if (process.env.VITE_BACKEND_API_URL) {
+//     url = process.env.VITE_BACKEND_API_URL;
+//   }
+//   return !url || !url.match('/$') ? url : url.substring(0, url.length - 1);
+// };
+
 export const url = () => {
-  let url = window.location.href.replace('5173', '8000');
   if (process.env.VITE_BACKEND_API_URL) {
-    url = process.env.VITE_BACKEND_API_URL;
+    return process.env.VITE_BACKEND_API_URL.replace(/\/$/, '');
   }
-  return !url || !url.match('/$') ? url : url.substring(0, url.length - 1);
+
+  // Fallback for local development
+  const local = window.location.href.includes('localhost') || window.location.href.includes('5173');
+  return local
+    ? 'https://4f5ebf6efde6.ngrok-free.app'
+    : 'https://4f5ebf6efde6.ngrok-free.app'; // 👈 your ngrok backend
 };
 
 // validation check for s3 bucket url
