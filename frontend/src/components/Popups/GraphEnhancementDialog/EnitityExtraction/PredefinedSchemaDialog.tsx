@@ -114,7 +114,7 @@ const PredefinedSchemaDialog = ({ open, onClose, onApply }: SchemaFromTextProps)
           'aria-labelledby': 'form-dialog-title',
         }}
       >
-        <div className='p-4 border-b border-palette-neutral-border-weak'>Entity Graph Extraction Settings</div>
+        <Dialog.Header>Entity Graph Extraction Settings</Dialog.Header>
         <Dialog.Content className='n-flex n-flex-col n-gap-token-6 p-6'>
           <div className='text-center'>
             <h5 className='text-lg font-semibold'>{appLabels.predefinedSchema}</h5>

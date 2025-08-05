@@ -274,14 +274,14 @@ const SideNav: React.FC<SideNavProps> = ({
             size='unset'
             hasDisabledCloseButton={true}
           >
-            <div id='chatbot-dialog-title' className='flex justify-between self-end p-4 border-b border-palette-neutral-border-weak'>
+            <Dialog.Header className='flex justify-between self-end' htmlAttributes={{ id: 'chatbot-dialog-title' }}>
               <ExpandedChatButtonContainer
                 isFullScreen={isFullScreen}
                 closeChatBot={handleShrinkClick}
                 deleteOnClick={deleteOnClick}
                 messages={messages ?? []}
               />
-            </div>
+            </Dialog.Header>
             <Dialog.Content className='flex flex-col n-gap-token-4 w-full grow overflow-auto'>
               <Chatbot
                 isFullScreen={isFullScreen}

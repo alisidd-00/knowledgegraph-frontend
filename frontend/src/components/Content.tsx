@@ -64,12 +64,12 @@ const Content: React.FC<ContentProps> = ({
   setOpenConnection,
   showDisconnectButton,
   connectionStatus,
-  combinedPatterns,
-  setCombinedPatterns,
-  combinedNodes,
-  setCombinedNodes,
-  combinedRels,
-  setCombinedRels,
+  _combinedPatterns,
+  _setCombinedPatterns,
+  _combinedNodes,
+  _setCombinedNodes,
+  _combinedRels,
+  _setCombinedRels,
 }) => {
   const { breakpoints } = tokens;
   const isTablet = useMediaQuery(`(min-width:${breakpoints.xs}) and (max-width: ${breakpoints.lg})`);

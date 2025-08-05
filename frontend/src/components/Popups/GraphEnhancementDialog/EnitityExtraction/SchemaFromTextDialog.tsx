@@ -160,7 +160,7 @@ const SchemaFromTextDialog = ({ open, onClose, onApply }: SchemaFromTextProps) =
           'aria-labelledby': 'form-dialog-title',
         }}
       >
-        <div className='p-4 border-b border-palette-neutral-border-weak'>Entity Graph Extraction Settings</div>
+        <Dialog.Header>Entity Graph Extraction Settings</Dialog.Header>
         <Dialog.Content className='n-flex n-flex-col n-gap-token-4'>
           <TextArea
             helpText='Analyze the text to extract Entities'
