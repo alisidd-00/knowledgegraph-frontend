@@ -2,14 +2,9 @@ import axios from 'axios';
 import { url } from '../utils/Utils';
 import { UserCredentials } from '../types';
 
-// const api = axios.create({
-//   baseURL: url(),
-//   data: {},
-// });
-
 const api = axios.create({
-  baseURL: 'https://4f5ebf6efde6.ngrok-free.app',
-  withCredentials: true,          
+  baseURL: url(),
+  data: {},
 });
 
 export const createDefaultFormData = (userCredentials: UserCredentials) => {
