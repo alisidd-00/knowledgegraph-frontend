@@ -11,6 +11,7 @@ export const getSystemPrompt = async () => {
   }
 };
 
+
 export const updateSystemPrompt = async (systemPrompt: string) => {
   try {
     const formData = new FormData();
